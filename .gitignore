@@ -1,4 +1,10 @@
 datasets/
 SeViLA/
-README.md
+README_official.md
 assets/
+LLaVA-NeXT/
+lmms-eval/
+results/
+optimized_results/
+
+Mixed Video Pipeline/synthesis.py

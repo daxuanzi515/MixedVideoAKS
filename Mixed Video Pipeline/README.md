@@ -12,8 +12,11 @@ Mixed Video:
 ![](img/pipeflow.png)
 
 ## auto generate questions and answers
-see `auto_QAs.py` or `auto_QAs_random.py` 
-
+See `auto_QAs.py` or `auto_QAs_random.py` 
+Check fps:
+```bash
+ffmpeg -i "Test_0_Fighting.mp4" 2>&1
+```
 ## Mixed Video Pipeline
 Easy Call: Benign Video -> B, Malignant Video -> M
 Requires: 

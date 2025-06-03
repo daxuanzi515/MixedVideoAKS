@@ -1,0 +1,1682 @@
+[
+  {
+    "index": 240,
+    "file_prefix": "Test_0_Mixed_q240",
+    "video_id": "Test_0_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_0_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 241,
+    "file_prefix": "Test_0_Mixed_q241",
+    "video_id": "Test_0_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_0_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 242,
+    "file_prefix": "Test_0_Mixed_q242",
+    "video_id": "Test_0_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_0_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 243,
+    "file_prefix": "Test_0_Mixed_q243",
+    "video_id": "Test_0_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_0_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 244,
+    "file_prefix": "Test_1_Mixed_q244",
+    "video_id": "Test_1_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_1_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 245,
+    "file_prefix": "Test_1_Mixed_q245",
+    "video_id": "Test_1_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_1_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 246,
+    "file_prefix": "Test_1_Mixed_q246",
+    "video_id": "Test_1_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_1_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 247,
+    "file_prefix": "Test_1_Mixed_q247",
+    "video_id": "Test_1_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_1_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 248,
+    "file_prefix": "Test_2_Mixed_q248",
+    "video_id": "Test_2_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_2_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 249,
+    "file_prefix": "Test_2_Mixed_q249",
+    "video_id": "Test_2_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_2_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 250,
+    "file_prefix": "Test_2_Mixed_q250",
+    "video_id": "Test_2_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_2_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 251,
+    "file_prefix": "Test_2_Mixed_q251",
+    "video_id": "Test_2_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_2_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 252,
+    "file_prefix": "Test_3_Mixed_q252",
+    "video_id": "Test_3_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_3_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 253,
+    "file_prefix": "Test_3_Mixed_q253",
+    "video_id": "Test_3_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_3_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 254,
+    "file_prefix": "Test_3_Mixed_q254",
+    "video_id": "Test_3_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_3_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 255,
+    "file_prefix": "Test_3_Mixed_q255",
+    "video_id": "Test_3_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_3_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 256,
+    "file_prefix": "Test_4_Mixed_q256",
+    "video_id": "Test_4_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_4_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 257,
+    "file_prefix": "Test_4_Mixed_q257",
+    "video_id": "Test_4_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_4_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 258,
+    "file_prefix": "Test_4_Mixed_q258",
+    "video_id": "Test_4_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_4_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 259,
+    "file_prefix": "Test_4_Mixed_q259",
+    "video_id": "Test_4_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_4_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 260,
+    "file_prefix": "Test_5_Mixed_q260",
+    "video_id": "Test_5_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_5_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 261,
+    "file_prefix": "Test_5_Mixed_q261",
+    "video_id": "Test_5_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_5_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 262,
+    "file_prefix": "Test_5_Mixed_q262",
+    "video_id": "Test_5_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_5_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 263,
+    "file_prefix": "Test_5_Mixed_q263",
+    "video_id": "Test_5_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_5_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 264,
+    "file_prefix": "Test_6_Mixed_q264",
+    "video_id": "Test_6_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_6_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 265,
+    "file_prefix": "Test_6_Mixed_q265",
+    "video_id": "Test_6_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_6_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 266,
+    "file_prefix": "Test_6_Mixed_q266",
+    "video_id": "Test_6_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_6_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 267,
+    "file_prefix": "Test_6_Mixed_q267",
+    "video_id": "Test_6_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_6_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 268,
+    "file_prefix": "Test_7_Mixed_q268",
+    "video_id": "Test_7_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_7_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 269,
+    "file_prefix": "Test_7_Mixed_q269",
+    "video_id": "Test_7_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_7_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 270,
+    "file_prefix": "Test_7_Mixed_q270",
+    "video_id": "Test_7_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_7_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 271,
+    "file_prefix": "Test_7_Mixed_q271",
+    "video_id": "Test_7_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_7_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 272,
+    "file_prefix": "Test_8_Mixed_q272",
+    "video_id": "Test_8_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_8_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 273,
+    "file_prefix": "Test_8_Mixed_q273",
+    "video_id": "Test_8_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_8_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 274,
+    "file_prefix": "Test_8_Mixed_q274",
+    "video_id": "Test_8_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_8_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 275,
+    "file_prefix": "Test_8_Mixed_q275",
+    "video_id": "Test_8_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_8_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 276,
+    "file_prefix": "Test_9_Mixed_q276",
+    "video_id": "Test_9_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_9_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 277,
+    "file_prefix": "Test_9_Mixed_q277",
+    "video_id": "Test_9_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_9_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 278,
+    "file_prefix": "Test_9_Mixed_q278",
+    "video_id": "Test_9_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_9_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 279,
+    "file_prefix": "Test_9_Mixed_q279",
+    "video_id": "Test_9_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_9_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 280,
+    "file_prefix": "Test_10_Mixed_q280",
+    "video_id": "Test_10_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_10_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 281,
+    "file_prefix": "Test_10_Mixed_q281",
+    "video_id": "Test_10_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_10_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 282,
+    "file_prefix": "Test_10_Mixed_q282",
+    "video_id": "Test_10_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_10_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 283,
+    "file_prefix": "Test_10_Mixed_q283",
+    "video_id": "Test_10_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_10_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 284,
+    "file_prefix": "Test_11_Mixed_q284",
+    "video_id": "Test_11_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_11_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 285,
+    "file_prefix": "Test_11_Mixed_q285",
+    "video_id": "Test_11_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_11_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 286,
+    "file_prefix": "Test_11_Mixed_q286",
+    "video_id": "Test_11_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_11_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 287,
+    "file_prefix": "Test_11_Mixed_q287",
+    "video_id": "Test_11_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_11_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 288,
+    "file_prefix": "Test_12_Mixed_q288",
+    "video_id": "Test_12_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_12_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 289,
+    "file_prefix": "Test_12_Mixed_q289",
+    "video_id": "Test_12_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_12_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 290,
+    "file_prefix": "Test_12_Mixed_q290",
+    "video_id": "Test_12_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_12_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 291,
+    "file_prefix": "Test_12_Mixed_q291",
+    "video_id": "Test_12_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_12_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 292,
+    "file_prefix": "Test_13_Mixed_q292",
+    "video_id": "Test_13_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_13_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 293,
+    "file_prefix": "Test_13_Mixed_q293",
+    "video_id": "Test_13_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_13_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 294,
+    "file_prefix": "Test_13_Mixed_q294",
+    "video_id": "Test_13_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_13_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 295,
+    "file_prefix": "Test_13_Mixed_q295",
+    "video_id": "Test_13_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_13_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 296,
+    "file_prefix": "Test_14_Mixed_q296",
+    "video_id": "Test_14_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_14_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 297,
+    "file_prefix": "Test_14_Mixed_q297",
+    "video_id": "Test_14_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_14_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 298,
+    "file_prefix": "Test_14_Mixed_q298",
+    "video_id": "Test_14_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_14_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 299,
+    "file_prefix": "Test_14_Mixed_q299",
+    "video_id": "Test_14_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_14_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 300,
+    "file_prefix": "Test_15_Mixed_q300",
+    "video_id": "Test_15_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_15_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 301,
+    "file_prefix": "Test_15_Mixed_q301",
+    "video_id": "Test_15_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_15_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 302,
+    "file_prefix": "Test_15_Mixed_q302",
+    "video_id": "Test_15_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_15_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 303,
+    "file_prefix": "Test_15_Mixed_q303",
+    "video_id": "Test_15_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_15_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 304,
+    "file_prefix": "Test_16_Mixed_q304",
+    "video_id": "Test_16_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_16_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 305,
+    "file_prefix": "Test_16_Mixed_q305",
+    "video_id": "Test_16_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_16_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 306,
+    "file_prefix": "Test_16_Mixed_q306",
+    "video_id": "Test_16_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_16_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 307,
+    "file_prefix": "Test_16_Mixed_q307",
+    "video_id": "Test_16_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_16_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 308,
+    "file_prefix": "Test_17_Mixed_q308",
+    "video_id": "Test_17_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_17_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 309,
+    "file_prefix": "Test_17_Mixed_q309",
+    "video_id": "Test_17_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_17_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 310,
+    "file_prefix": "Test_17_Mixed_q310",
+    "video_id": "Test_17_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_17_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 311,
+    "file_prefix": "Test_17_Mixed_q311",
+    "video_id": "Test_17_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_17_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 312,
+    "file_prefix": "Test_18_Mixed_q312",
+    "video_id": "Test_18_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_18_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 313,
+    "file_prefix": "Test_18_Mixed_q313",
+    "video_id": "Test_18_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_18_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 314,
+    "file_prefix": "Test_18_Mixed_q314",
+    "video_id": "Test_18_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_18_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 315,
+    "file_prefix": "Test_18_Mixed_q315",
+    "video_id": "Test_18_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_18_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 316,
+    "file_prefix": "Test_19_Mixed_q316",
+    "video_id": "Test_19_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_19_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 317,
+    "file_prefix": "Test_19_Mixed_q317",
+    "video_id": "Test_19_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_19_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 318,
+    "file_prefix": "Test_19_Mixed_q318",
+    "video_id": "Test_19_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_19_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 319,
+    "file_prefix": "Test_19_Mixed_q319",
+    "video_id": "Test_19_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_19_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 320,
+    "file_prefix": "Test_20_Mixed_q320",
+    "video_id": "Test_20_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_20_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 321,
+    "file_prefix": "Test_20_Mixed_q321",
+    "video_id": "Test_20_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_20_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 322,
+    "file_prefix": "Test_20_Mixed_q322",
+    "video_id": "Test_20_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_20_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 323,
+    "file_prefix": "Test_20_Mixed_q323",
+    "video_id": "Test_20_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_20_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 324,
+    "file_prefix": "Test_21_Mixed_q324",
+    "video_id": "Test_21_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_21_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 325,
+    "file_prefix": "Test_21_Mixed_q325",
+    "video_id": "Test_21_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_21_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 326,
+    "file_prefix": "Test_21_Mixed_q326",
+    "video_id": "Test_21_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_21_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 327,
+    "file_prefix": "Test_21_Mixed_q327",
+    "video_id": "Test_21_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_21_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 328,
+    "file_prefix": "Test_22_Mixed_q328",
+    "video_id": "Test_22_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_22_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 329,
+    "file_prefix": "Test_22_Mixed_q329",
+    "video_id": "Test_22_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_22_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 330,
+    "file_prefix": "Test_22_Mixed_q330",
+    "video_id": "Test_22_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_22_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 331,
+    "file_prefix": "Test_22_Mixed_q331",
+    "video_id": "Test_22_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_22_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 332,
+    "file_prefix": "Test_23_Mixed_q332",
+    "video_id": "Test_23_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_23_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 333,
+    "file_prefix": "Test_23_Mixed_q333",
+    "video_id": "Test_23_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_23_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 334,
+    "file_prefix": "Test_23_Mixed_q334",
+    "video_id": "Test_23_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_23_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 335,
+    "file_prefix": "Test_23_Mixed_q335",
+    "video_id": "Test_23_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_23_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 336,
+    "file_prefix": "Test_24_Mixed_q336",
+    "video_id": "Test_24_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_24_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 337,
+    "file_prefix": "Test_24_Mixed_q337",
+    "video_id": "Test_24_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_24_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 338,
+    "file_prefix": "Test_24_Mixed_q338",
+    "video_id": "Test_24_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_24_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 339,
+    "file_prefix": "Test_24_Mixed_q339",
+    "video_id": "Test_24_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_24_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 340,
+    "file_prefix": "Test_25_Mixed_q340",
+    "video_id": "Test_25_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_25_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 341,
+    "file_prefix": "Test_25_Mixed_q341",
+    "video_id": "Test_25_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_25_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 342,
+    "file_prefix": "Test_25_Mixed_q342",
+    "video_id": "Test_25_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_25_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 343,
+    "file_prefix": "Test_25_Mixed_q343",
+    "video_id": "Test_25_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_25_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 344,
+    "file_prefix": "Test_26_Mixed_q344",
+    "video_id": "Test_26_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_26_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 345,
+    "file_prefix": "Test_26_Mixed_q345",
+    "video_id": "Test_26_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_26_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 346,
+    "file_prefix": "Test_26_Mixed_q346",
+    "video_id": "Test_26_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_26_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 347,
+    "file_prefix": "Test_26_Mixed_q347",
+    "video_id": "Test_26_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_26_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 348,
+    "file_prefix": "Test_27_Mixed_q348",
+    "video_id": "Test_27_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_27_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 349,
+    "file_prefix": "Test_27_Mixed_q349",
+    "video_id": "Test_27_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_27_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 350,
+    "file_prefix": "Test_27_Mixed_q350",
+    "video_id": "Test_27_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_27_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 351,
+    "file_prefix": "Test_27_Mixed_q351",
+    "video_id": "Test_27_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_27_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 352,
+    "file_prefix": "Test_28_Mixed_q352",
+    "video_id": "Test_28_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_28_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 353,
+    "file_prefix": "Test_28_Mixed_q353",
+    "video_id": "Test_28_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_28_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 354,
+    "file_prefix": "Test_28_Mixed_q354",
+    "video_id": "Test_28_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_28_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 355,
+    "file_prefix": "Test_28_Mixed_q355",
+    "video_id": "Test_28_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_28_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 356,
+    "file_prefix": "Test_29_Mixed_q356",
+    "video_id": "Test_29_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_29_Mixed.mp4",
+    "question": "What type of weapon-based violence is happening in this scene?",
+    "choices": [
+      "Fighting",
+      "Shooting",
+      "Driving",
+      "Talking"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 357,
+    "file_prefix": "Test_29_Mixed_q357",
+    "video_id": "Test_29_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_29_Mixed.mp4",
+    "question": "Which violent action involving a gun is depicted in the video?",
+    "choices": [
+      "Fighting",
+      "Cooking",
+      "Shooting",
+      "Reading"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 358,
+    "file_prefix": "Test_29_Mixed_q358",
+    "video_id": "Test_29_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_29_Mixed.mp4",
+    "question": "What behavior involving the use of a firearm is shown here?",
+    "choices": [
+      "Shooting",
+      "Sleeping",
+      "Fighting",
+      "Eating"
+    ],
+    "answer": "Shooting"
+  },
+  {
+    "index": 359,
+    "file_prefix": "Test_29_Mixed_q359",
+    "video_id": "Test_29_Mixed",
+    "video_path": "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_1/Test_29_Mixed.mp4",
+    "question": "What kind of violent act involving firearms is taking place in this video?",
+    "choices": [
+      "Shooting",
+      "Fighting",
+      "Jumping",
+      "Walking"
+    ],
+    "answer": "Shooting"
+  }
+]

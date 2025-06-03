@@ -1,30 +1,156 @@
-from mixed_strategy import VideoMixer
+# from mixed_strategy import VideoMixer
+# import os
+
+# if __name__ == "__main__":
+#     Number = 30
+#     class_type = 2
+#     total_duration = 360
+#     B_folder = "/home/cxx/HWs/AKS/datasets/XD_violence/ours/Benign/"
+
+#     B_list = sorted([
+#         os.path.join(B_folder, f)
+#         for f in os.listdir(B_folder)
+#         if f.endswith(".mp4")
+#     ])[:Number]
+
+
+#     M_list = [f"/home/cxx/HWs/AKS/datasets/XD_violence/ours/Fighting/Test_{i}_Fighting.mp4" for i in range(Number)]
+#     O_list = [f"/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/class_2/Test_{i}_Mixed.mp4" for i in range(Number)]
+
+#     for i in range(30):
+#         print(f"[🚀] Processing sample Class {class_type}: {i}...")
+#         print(f"[🤖] Benign video: {B_list[i]}, Malignant video: {M_list[i]}")
+#         mixer = VideoMixer(
+#             benign_video=B_list[i],
+#             malignant_video=M_list[i],
+#             output_path=O_list[i]
+#         )
+#         mixer.generate_mixed_video(class_type=class_type, total_duration=total_duration)
+
+
+# import os
+# import re
+
+# def rename_videos(directory):
+#     """
+#     Rename video files in the specified directory from the format
+#     'Test_i_Mixed_class1_360s.mp4' to 'Test_i_Mixed.mp4'.
+
+#     Args:
+#         directory (str): The directory containing the video files to rename.
+#     """
+#     # Regular expression to match the filename pattern
+#     pattern = re.compile(r'(Test_\d+_Mixed)_class2_360s\.mp4')
+#     i = 0
+#     # List all files in the directory
+#     for filename in os.listdir(directory):
+#         i+=1
+#         match = pattern.match(filename)
+#         if match:
+#             # Extract the new filename without the '_class1_360s' part
+#             new_filename = f"{match.group(1)}.mp4"
+#             # Construct the full paths for the old and new filenames
+#             old_file_path = os.path.join(directory, filename)
+#             new_file_path = os.path.join(directory, new_filename)
+#             # Rename the file
+#             os.rename(old_file_path, new_file_path)
+#             print(f"Renamed '{filename}' to '{new_filename}'")
+#         # if i==1:
+#         #     break
+# # Example usage
+# if __name__ == "__main__":
+#     video_directory = "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Shooting/class_2"
+#     rename_videos(video_directory)
+
+
+
+
 import os
+import json
 
-if __name__ == "__main__":
-    Number = 30
-    class_type = 2
-    total_duration = 360
-    B_folder = "/home/cxx/HWs/AKS/datasets/XD_violence/ours/Benign/"
+def read_all_frame_jsons(folder_path, output_path=None):
+    merged_list = []
 
-    B_list = sorted([
-        os.path.join(B_folder, f)
-        for f in os.listdir(B_folder)
-        if f.endswith(".mp4")
-    ])[:Number]
+    # 遍历所有 json 文件
+    for filename in os.listdir(folder_path):
+        if filename.endswith(".json") and filename.startswith("Test_") and "_Mixed_q" in filename:
+            file_path = os.path.join(folder_path, filename)
+            try:
+                with open(file_path, 'r') as f:
+                    data = json.load(f)
+                    if isinstance(data, list):
+                        merged_list.append(data)
+                    else:
+                        print(f"⚠️ Skip non-list file: {filename}")
+            except Exception as e:
+                print(f"❌ Failed to read {filename}: {e}")
+    with open(output_path, 'w') as f:
+        json.dump(merged_list, f)
+    print(f"✅ Merged {len(merged_list)} files to {output_path}")
+
+    return merged_list
+
+frames_dir = "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/scores"
+output_path = "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/scores.json"
+all_frames = read_all_frame_jsons(frames_dir, output_path)
+print(f"Total frames collected: {len(all_frames)}")
 
 
-    M_list = [f"/home/cxx/HWs/AKS/datasets/XD_violence/ours/Fighting/Test_{i}_Fighting.mp4" for i in range(Number)]
-    O_list = [f"/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/class_2/Test_{i}_Mixed.mp4" for i in range(Number)]
-
-    for i in range(30):
-        print(f"[🚀] Processing sample Class {class_type}: {i}...")
-        print(f"[🤖] Benign video: {B_list[i]}, Malignant video: {M_list[i]}")
-        mixer = VideoMixer(
-            benign_video=B_list[i],
-            malignant_video=M_list[i],
-            output_path=O_list[i]
-        )
-        mixer.generate_mixed_video(class_type=class_type, total_duration=total_duration)
+frames_dir = "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/frames"
+output_path = "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/frames.json"
+all_frames = read_all_frame_jsons(frames_dir, output_path)
+print(f"Total frames collected: {len(all_frames)}")
+# print(all_frames[:10])
 
 
+
+# import json
+# ori = "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/selected_frames/selected_frames.json"
+# opt = "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/optimized_frames/optimized_frames.json"
+
+# with open(ori, 'r') as f:
+#     data_1 = json.load(f)
+
+# with open(opt, 'r') as f:
+#     data_2 = json.load(f)
+
+# print(f"Number of samples in ori: {len(data_1)}")
+# print(f"Number of samples in opt: {len(data_2)}")
+
+# if len(data_1) != len(data_2):
+#     print("❗Mismatch in number of samples.")
+# else:
+#     print("✅ Same number of samples.")
+
+
+# diff_stats = []
+
+# for i, (a, b) in enumerate(zip(data_1, data_2)):
+#     set_a, set_b = set(a), set(b)
+#     added = sorted(list(set_b - set_a))
+#     removed = sorted(list(set_a - set_b))
+
+#     if added or removed:
+#         diff_stats.append({
+#             "index": i,
+#             "added": added,
+#             "removed": removed
+#         })
+
+# print(f"\nTotal different entries: {len(diff_stats)}")
+
+
+# for d in diff_stats[:5]:  # 打印前 5 个不同的样本
+#     print(f"\nSample #{d['index']}")
+#     print(f"  ➕ Added in opt: {d['added']}")
+#     print(f"  ➖ Removed from ori: {d['removed']}")
+
+    
+# def jaccard(a, b):
+#     a, b = set(a), set(b)
+#     if not a and not b:
+#         return 1.0
+#     return len(a & b) / len(a | b)
+
+# scores = [jaccard(a, b) for a, b in zip(data_1, data_2)]
+# print(f"\nAverage frame overlap (Jaccard): {sum(scores)/len(scores):.4f}")

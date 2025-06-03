@@ -1,5 +1,7 @@
 # My MiniCPM-2.6 Deployment
-## Step by Step: Quick Start
+[OPENBMB HANDBOOK](https://modelbest.feishu.cn/wiki/LZxLwp4Lzi29vXklYLFchwN5nCf)
+
+## Quick Start
 Create a new conda environment:
 ```bash
 conda create -n AKS python=3.9
@@ -16,15 +18,10 @@ git clone https://huggingface.co/openbmb/MiniCPM-V-2_6
 awq model: 
 ```bash
 git clone https://www.modelscope.cn/models/linglingdan/MiniCPM-V_2_6_awq_int4
-# 安装Autoawq的分支，已经提了pr，等官方合并
 git clone https://github.com/LDLINGLINGLING/AutoAWQ.git
 cd AutoAWQ
 git checkout minicpmv2.6
 pip install -e .
-```
-Install vllm:
-```bash
-pip install vllm==0.5.4
 ```
 Support multiple-images and videos input:
 Pay attention to GPU configuration, you need to install `cuda-toolkit` >= 11.6, and `cmake` >= 3.20.0. in your virtual environment.
@@ -57,14 +54,21 @@ Refresh your bashrc or zshrc:
 source ~/.bashrc
 ```
 
-Next, use this as must:
+Next, use **Pre-Complied** version of `vllm` as must:
 ```bash
 conda create -n vllm python=3.10
 conda activate vllm
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
 pip install vllm
 ```
-
+Optional:
+It will cost plenty of time and RAM to build the project completely.
+So it is not recommended to use.
+```bash
+git clone git@github.com:vllm-project/vllm.git
+cd vllm
+pip install -e . # it may chuncked by accident
+```
 
 Check your package version:
 ```python
@@ -75,16 +79,11 @@ print("CUDA是否可用:", torch.cuda.is_available())
 print("CUDA版本:", torch.version.cuda)
 print("GPU型号:", torch.cuda.get_device_name(0))
 print("numpy版本:", np.__version__)
-# PyTorch版本: 2.5.1
-# CUDA是否可用: True
-# CUDA版本: 11.8
-# GPU型号: NVIDIA GeForce RTX 3090
-# numpy版本: 1.26.4
 ```
 
 
 
-### Codes Demo
+### VLLM
 - Demo Code For Video
 ```python
 from transformers import AutoTokenizer
@@ -114,7 +113,8 @@ MODEL_NAME = "checkpoints/MiniCPM-V-2_6"
 llm = LLM(
     model=MODEL_NAME,
     gpu_memory_utilization=0.95,
-    max_model_len=4096
+    max_model_len=4096,
+    trust_remote_code=True
 )
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 stop_tokens = ['<|im_end|>', '<|endoftext|>']
@@ -204,7 +204,7 @@ sampling_params = SamplingParams(
     stop_token_ids=stop_token_ids, 
     #use_beam_search=True,
     temperature=0, 
-    best_of=1,
+    best_of=1, # greedy as 1
     max_tokens=64
 )
 
@@ -213,17 +213,23 @@ outputs = llm.generate(inputs, sampling_params=sampling_params)
 print(outputs[0].outputs[0].text)
 ```
 
-
-
-
-
+### LLAMA.CPP
 llama.cpp in CPU mode but use RAM.
 
+Download three weights from [LINK](https://huggingface.co/openbmb/MiniCPM-V-2_6-gguf/tree/main): `mmproj-model-f16.gguf, ggml-model-f16.gguf, ggml-model-Q3_K_M.gguf`
+
+
+#### Single Image Inference 
+```bash
 ./llama-minicpmv-cli -m /home/cxx/HWs/AKS/llama.cpp/Minicpmv2_6_gguf/ggml-model-Q4_K_M.gguf --mmproj /home/cxx/HWs/AKS/llama.cpp/Minicpmv2_6_gguf/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image /home/cxx/HWs/AKS/datasets/img/bto.jpg -p "这张图片中有什么？"
-
->=8GB
+```
+#### Video Inference 
+- Required RAM>=8GB
+```bash
 ./llama-minicpmv-cli -m /home/cxx/HWs/AKS/llama.cpp/Minicpmv2_6_gguf/ggml-model-Q4_K_M.gguf --mmproj /home/cxx/HWs/AKS/llama.cpp/Minicpmv2_6_gguf/mmproj-model-f16.gguf -c 8192 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --video /home/cxx/HWs/AKS/datasets/XD_violence/ours/Shooting/Test_0_Shooting.mp4 -p "Please answer me question about this video. What is the main action of hero in the video? your candidates: Shooting, Fighting, Running, Walking. You should answer me one or two of candidates. Your answer should be separated by comma and space, Like [Shooting, Fighting]. Without any explanation words."
+```
 
-
->=19GB
+- Required RAM>=19GB
+```bash
 ./llama-minicpmv-cli -m /home/cxx/HWs/AKS/llama.cpp/Minicpmv2_6_gguf/ggml-model-f16.gguf --mmproj /home/cxx/HWs/AKS/llama.cpp/Minicpmv2_6_gguf/mmproj-model-f16.gguf -c 8192 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --video /home/cxx/HWs/AKS/datasets/XD_violence/ours/Shooting/Test_0_Shooting.mp4 -p "Please answer me question about this video. What is the main action of hero in the video? your candidates: Shooting, Fighting, Running, Walking. You should answer me one or two of candidates. Your answer should be separated by comma and space, Like [Shooting, Fighting]. Without any explanation words."
+```

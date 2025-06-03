@@ -17,18 +17,12 @@ import sys
 # print("GPU型号:", torch.cuda.get_device_name(0))
 # print("numpy版本:", np.__version__)
 
-# import numpy as np
-# print("Numpy version:", np.__version__)
-# print("Array type:", type(np.array([1.0])))
-# print("Is instance of np.ndarray:", isinstance(np.array([1.0]), np.ndarray))
 
 
 from PIL import Image
 from transformers import AutoTokenizer
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 sys.path.append(project_root)
-
-import vllm
 from vllm import LLM, SamplingParams
 
 # 图像文件路径列表

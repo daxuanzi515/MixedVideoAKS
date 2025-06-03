@@ -6,5 +6,6 @@ LLaVA-NeXT/
 lmms-eval/
 results/
 optimized_results/
-
-Mixed Video Pipeline/synthesis.py
+Mixed Video Pipeline/outputs/Fighting/
+Mixed Video Pipeline/outputs/Shooting/
+evaluation/

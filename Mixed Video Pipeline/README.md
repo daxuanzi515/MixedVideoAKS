@@ -9,7 +9,7 @@ Mixed Video:
 - Shooting: class_1: 30, class_2: 30
 
 **PipeFlow**
-![](assets/pipeflow.png)
+![](img/pipeflow.png)
 
 ## auto generate questions and answers
 see `auto_QAs.py` or `auto_QAs_random.py` 

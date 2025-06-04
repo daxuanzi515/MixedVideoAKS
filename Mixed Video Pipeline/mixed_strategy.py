@@ -38,7 +38,7 @@ class VideoMixer:
         Generate mixed video based on class_type (1 or 2), or a custom ratio (class_type=3).
         """
         if class_type == 1:
-            B1_ratio, M_ratio, B2_ratio = 0.5, 0.3, 0.1
+            B1_ratio, M_ratio, B2_ratio = 0.5, 0.3, 0.2
         elif class_type == 2:
             B1_ratio, M_ratio, B2_ratio = 0.75, 0.2, 0.05
         elif customs is not None and class_type == 3:

@@ -14,6 +14,80 @@ pip install -e .
 pip install numpy==1.24.4
 pip install spacy
 ```
+Usage of SeViLA:
+```bash
+# only extract features in 3 videos of Fighting/class_1
+python cxx_extractor_store_Mixed_Video.py --dataset_name Fighting --dataset_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Fighting" --extract_feature_model blip --output_file "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things" --classes class_1 --min_videos 0 --max_videos 3
+
+# test exclusion
+python cxx_extractor_store_Mixed_Video.py --dataset_name Fighting --dataset_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Fighting" --extract_feature_model blip --output_file "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things" --classes class_1 --min_videos 120 --max_videos 125
+
+# orignal select 
+python frame_select.py \
+  --dataset_name Fighting \
+  --extract_feature_model blip \
+  --score_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/scores.json" \
+  --frame_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/frames.json" \
+  --output_file "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/selected_frames"
+
+python frame_select.py \
+  --dataset_name Fighting \
+  --extract_feature_model blip \
+  --score_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_2/blip/scores.json" \
+  --frame_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_2/blip/frames.json" \
+  --output_file "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_2/blip/selected_frames"
+
+python frame_select.py \
+  --dataset_name Fighting \
+  --extract_feature_model blip \
+  --score_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/scores.json" \
+  --frame_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/frames.json" \
+  --output_file "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/selected_frames"
+
+python frame_select.py \
+  --dataset_name Fighting \
+  --extract_feature_model blip \
+  --score_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_2/blip/scores.json" \
+  --frame_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_2/blip/frames.json" \
+  --output_file "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_2/blip/selected_frames"
+
+# optimized
+python optimized_select_frame.py \
+  --dataset_name Fighting \
+  --extract_feature_model blip \
+  --score_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/scores.json" \
+  --frame_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/frames.json" \
+  --output_file "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/optimized_frames"
+
+python optimized_select_frame.py \
+  --dataset_name Fighting \
+  --extract_feature_model blip \
+  --score_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_2/blip/scores.json" \
+  --frame_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_2/blip/frames.json" \
+  --output_file "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_2/blip/optimized_frames"
+
+python optimized_select_frame.py \
+  --dataset_name Fighting \
+  --extract_feature_model blip \
+  --score_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/scores.json" \
+  --frame_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/frames.json" \
+  --output_file "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/optimized_frames"
+
+python optimized_select_frame.py \
+  --dataset_name Fighting \
+  --extract_feature_model blip \
+  --score_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_2/blip/scores.json" \
+  --frame_path "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_2/blip/frames.json" \
+  --output_file "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_2/blip/optimized_frames"
+
+python img_task.py \
+  --qa_data "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/mixed_video_qa_randomized_4x_per_video.json" \
+  --image_dir "/home/cxx/HWs/AKS/Mixed Video Pipeline/Testing/outputs/Fighting/class_1/jpgs" \
+  --frames "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/optimized_frames/optimized_frames.json"
+
+```
+
+
 ### MLLMs Deployment
 Pay attention to the version of the lmms-eval. The latest version may not work in python 3.9. 
 Please use the following commands to install the environment:

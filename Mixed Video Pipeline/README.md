@@ -51,7 +51,7 @@ final_clip.write_videofile(concat_video_path)
 
 
 - Class 1: 50%
-procentage of components: B: M: B = 50%: 30%: 10% in total
+procentage of components: B: M: B = 50%: 30%: 20% in total
 
 - Class 2: 75%
 procentage of components: B: M: B = 75%: 20%: 5% in total

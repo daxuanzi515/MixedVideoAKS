@@ -6,6 +6,26 @@ LLaVA-NeXT/
 lmms-eval/
 results/
 optimized_results/
+evaluation/
 Mixed Video Pipeline/outputs/Fighting/
 Mixed Video Pipeline/outputs/Shooting/
-evaluation/
+Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/embeddings/
+Mixed Video Pipeline/extracted_things/Fighting/class_2/blip/embeddings/
+Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/embeddings/
+Mixed Video Pipeline/extracted_things/Shooting/class_2/blip/embeddings/
+Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/frames/
+Mixed Video Pipeline/extracted_things/Fighting/class_2/blip/frames/
+Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/frames/
+Mixed Video Pipeline/extracted_things/Shooting/class_2/blip/frames/
+Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/scores/
+Mixed Video Pipeline/extracted_things/Fighting/class_2/blip/scores/
+Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/scores/
+Mixed Video Pipeline/extracted_things/Shooting/class_2/blip/scores/ 
+Mixed Video Pipeline/extracted_things/Fighting/class_1/blip/failed_videos.json
+Mixed Video Pipeline/extracted_things/Fighting/class_2/blip/failed_videos.json
+Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/failed_videos.json
+Mixed Video Pipeline/extracted_things/Shooting/class_2/blip/failed_videos.json
+Mixed Video Pipeline/Testing/outputs/Fighting/class_1/jpgs
+Mixed Video Pipeline/Testing/outputs/Fighting/class_2/jpgs
+Mixed Video Pipeline/Testing/outputs/Shooting/class_1/jpgs
+Mixed Video Pipeline/Testing/outputs/Shooting/class_2/jpgs

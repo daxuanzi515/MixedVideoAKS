@@ -1,164 +1,120 @@
-# from modelscope import snapshot_download
-
-# # 指定下载路径
-# model_dir = snapshot_download('linglingdan/MiniCPM-V_2_6_awq_int4', cache_dir='/home/cxx/HWs/AKS/checkpoints')
-
-# # 打印下载路径
-# print(f"模型下载路径: {model_dir}")
-
-
+import argparse
 import os
-import sys
-# import torch
-# import numpy as np
-# print("PyTorch版本:", torch.__version__)
-# print("CUDA是否可用:", torch.cuda.is_available())
-# print("CUDA版本:", torch.version.cuda)
-# print("GPU型号:", torch.cuda.get_device_name(0))
-# print("numpy版本:", np.__version__)
-
-
-
+import json
+import shlex
+import subprocess
 from PIL import Image
-from transformers import AutoTokenizer
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-sys.path.append(project_root)
-from vllm import LLM, SamplingParams
-
-# 图像文件路径列表
-IMAGES = [
-    "/home/cxx/HWs/AKS/datasets/img/bto.jpg",  # 本地图片路径
-]
-
-# 模型名称或路径
-MODEL_NAME = "/home/cxx/HWs/AKS/checkpoints/MiniCPM-V-2_6" 
-
-# 打开并转换图像
-image = Image.open(IMAGES[0]).convert("RGB")
-
-# 初始化分词器
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True)
-
-# 初始化语言模型
-llm = LLM(model=MODEL_NAME,
-           gpu_memory_utilization=1,  # 使用全部GPU内存
-           trust_remote_code=True,
-           max_model_len=2048)  # 根据内存状况可调整此值
-
-# 构建对话消息
-messages = [{'role': 'user', 'content': '(<image>./</image>)\n' + '请描述这张图片'}]
-
-# 应用对话模板到消息
-prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-
-# 设置停止符ID
-# 2.0
-# stop_token_ids = [tokenizer.eos_id]
-# 2.5
-#stop_token_ids = [tokenizer.eos_id, tokenizer.eot_id]
-# 2.6 
-stop_tokens = ['<|im_end|>', '<|endoftext|>']
-stop_token_ids = [tokenizer.convert_tokens_to_ids(i) for i in stop_tokens]
-
-# 设置生成参数
-sampling_params = SamplingParams(
-    stop_token_ids=stop_token_ids,
-    # temperature=0.7,
-    # top_p=0.8,
-    # top_k=100,
-    # seed=3472,
-    max_tokens=1024,
-    # min_tokens=150,
-    temperature=0,
-    # use_beam_search=True, # none
-    # length_penalty=1.2,
-    best_of=1) # greedy must be 1)
-
-# 获取模型输出
-outputs = llm.generate({
-    "prompt": prompt,
-    "multi_modal_data": {
-        "image": image
-    }
-}, sampling_params=sampling_params)
-print(outputs[0].outputs[0].text)
-
-# import os
-# import sys
-# import types
-# import numpy as np
-# import torch
+from collections import Counter
 # from transformers import AutoTokenizer
-# from decord import VideoReader, cpu
-# from PIL import Image
-# project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-# sys.path.append(project_root)
-# from checkpoints.vllm.vllm import LLM, SamplingParams
+# from vllm import LLM, SamplingParams
 
-
-# # 进行图片推理
-# MAX_NUM_FRAMES = 16
-# def encode_video(filepath):
-#     def uniform_sample(l, n):
-#         gap = len(l) / n
-#         idxs = [int(i * gap + gap / 2) for i in range(n)]
-#         return [l[i] for i in idxs]
-#     vr = VideoReader(filepath, ctx=cpu(0))
-#     sample_fps = round(vr.get_avg_fps() / 1)  # FPS
-#     frame_idx = [i for i in range(0, len(vr), sample_fps)]
-#     if len(frame_idx)>MAX_NUM_FRAMES:
-#         frame_idx = uniform_sample(frame_idx, MAX_NUM_FRAMES)
-#     video = vr.get_batch(frame_idx).asnumpy()
-#     video = [Image.fromarray(v.astype('uint8')) for v in video]
-#     return video
-
-# MODEL_NAME = "/home/cxx/HWs/AKS/checkpoints/MiniCPM-V-2_6" 
-# # openbmb/MiniCPM-V-2_6: auto download from huggingface
-# # local path: checkpoints/MiniCPM-V-2_6
-# llm = LLM(
-#     model=MODEL_NAME,
-#     gpu_memory_utilization=0.95,
-#     max_model_len=2048,
-#     trust_remote_code=True,
-# )
-
-# tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+# # === 初始化模型一次 ===
+# MODEL_PATH = "/home/cxx/HWs/AKS/checkpoints/MiniCPM-V-2_6"
+# llm = LLM(model=MODEL_PATH, gpu_memory_utilization=1, trust_remote_code=True, max_model_len=2048)
+# tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, trust_remote_code=True)
 # stop_tokens = ['<|im_end|>', '<|endoftext|>']
 # stop_token_ids = [tokenizer.convert_tokens_to_ids(i) for i in stop_tokens]
+# sampling_params = SamplingParams(stop_token_ids=stop_token_ids, temperature=0, max_tokens=1024, best_of=1)
 
-# video_path = f"/home/cxx/HWs/AKS/datasets/XD_violence/ours/Shooting/Test_0_Shooting.mp4"
-# frames = encode_video(video_path)
-# messages = [{
-#     "role":
-#     "user",
-#     "content":
-#     "".join(["(<image>./</image>)"] * len(frames)) + "\nPlease describe this video."
-# }]
+# === 构造 prompt ===
+def build_prompt(question, choices):
+    choice_str = "\n".join([f"{chr(65+i)}. {c}" for i, c in enumerate(choices)])
+    return (
+        "(<image>./</image>)\n"
+        "You are analyzing a scene from a video. Carefully observe the image and select the most appropriate answer from the choices below.\n\n"
+        f"Question:\n{question}\n\nChoices:\n{choice_str}\n\n"
+        "Answer (choose only one option from above, e.g., \"A. Shooting\"):"
+    )
 
-# prompt = tokenizer.apply_chat_template(
-#     messages,
-#     tokenize=False,
-#     add_generation_prompt=True
-# )
+# ffmpeg -i "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Fighting/class_1/Test_0_Mixed.mp4" -vf "select='eq(n,60)'" -vframes 1 "/home/cxx/HWs/AKS/Mixed Video Pipeline/Testing/outputs/Fighting/class_1/jpgs/Test_0_Mixed_60.jpg" -y
 
-# sampling_params = SamplingParams(
-#     stop_token_ids=stop_token_ids, 
-#     use_beam_search=False,
-#     temperature=0.7,
-#     top_p=0.8,
-#     top_k=100, 
-#     max_tokens=512
-# )
+def extract_frame(video_path, frame_index, output_path):
+    """
+    使用 ffmpeg 从视频中截取指定帧并保存为图片。
 
-# outputs = llm.generate({
-#     "prompt": prompt,
-#     "multi_modal_data": {
-#         "image": {
-#             "images": frames,
-#             "use_image_id": False,
-#             "max_slice_nums": 1 if len(frames) > 16 else 2
-#         }
-#     }
-# }, sampling_params=sampling_params)
+    :param video_path: 视频文件路径
+    :param frame_index: 需要截取的帧索引
+    :param output_path: 保存截取图片的路径
+    """
+    if not os.path.exists(video_path):
+        print(f"视频文件不存在: {video_path}")
+        return
 
-# print(outputs)
+    # 确保输出路径的父目录存在
+    output_dir = os.path.dirname(output_path)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir, exist_ok=True)
+    # 构造 ffmpeg 命令
+    command = [
+        "ffmpeg",
+        "-i", video_path,
+        "-vf", f"select='eq(n,{frame_index})'",
+        "-vframes", "1",
+        output_path,
+        "-y"  # 覆盖输出文件（如果已存在）
+    ]
+    print(f"Running command: {' '.join(command)}")
+    # 调用 ffmpeg 命令
+    try:
+        result = subprocess.run(command, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        print(f"成功保存帧到: {output_path}")
+    except subprocess.CalledProcessError as e:
+        print(f"调用 ffmpeg 时出错: {e.stderr.decode().strip()}")
+        print(f"调用 ffmpeg 时出错: {e}")
+        
+
+
+# === 主推理逻辑 ===
+def run_vote_inference(qa_data_path, image_root_dir, frame_indices_dict_path, save_log_path):
+    with open(qa_data_path, 'r') as f:
+        qa_items = json.load(f)
+
+    with open(frame_indices_dict_path, 'r') as f:
+        frame_indices_list = json.load(f)
+
+    
+    # qa_items = qa_items[0:120]  # 1
+    # qa_items = qa_items[120:240]  # 2
+    # qa_items = qa_items[240:360]  # 1
+    qa_items = qa_items[360:480]  # 2
+
+    for idx, entry in enumerate(qa_items):
+        video_id = os.path.splitext(os.path.basename(entry['video_path']))[0]
+        all_indices = frame_indices_list[idx]
+        total = len(all_indices)
+        # class 1
+        # start = int(total * 0.5)
+        # end = int(total * 0.7)
+        # class 2
+        start = int(total * 0.75)
+        end = int(total * 0.95)
+        selected_indices = all_indices[start:end]
+        question = entry['question']
+        choices = entry['choices']
+        answer = entry['answer']
+        # print(f"\n[{idx+1}/{len(qa_items)}] Video: {video_id} | Question: {question}")
+        for fid in selected_indices:
+            frame_path = os.path.join(image_root_dir, f"{video_id}_q{idx}", f"{video_id}_frame_{fid}.jpg")
+            os.makedirs(os.path.dirname(os.path.join(image_root_dir, f"{video_id}_q{idx}")), exist_ok=True)
+            extract_frame(video_path=entry['video_path'], frame_index=fid, output_path=frame_path)
+
+    # 推理循环
+    log = []
+    correct = 0
+
+
+# === CLI ===
+if __name__ == '__main__':
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument('--qa_data', type=str, required=True)
+    # parser.add_argument('--image_dir', type=str, required=True, help="Root folder where per-video JPG folders exist")
+    # parser.add_argument('--frames', type=str, required=True, help="JSON file with list of key frame indices per QA")
+    # parser.add_argument('--save_log', type=str, required=True, help="Directory to save log JSON file")
+    # args = parser.parse_args()
+
+    # run_vote_inference(args.qa_data, args.image_dir, args.frames, args.save_log)
+    QA = "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/mixed_video_qa_randomized_4x_per_video.json"
+    img = "/home/cxx/HWs/AKS/Mixed Video Pipeline/Testing/outputs/Shooting/class_2/jpgs"
+    frames = "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_2/blip/optimized_frames/optimized_frames.json"
+    save_log = "XXXX"
+    run_vote_inference(QA, img, frames, save_log)

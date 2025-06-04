@@ -72,10 +72,10 @@ def run_vote_inference(qa_data_path, image_root_dir, frame_indices_dict_path, sa
     with open(frame_indices_dict_path, 'r') as f:
         frame_indices_list = json.load(f)
 
-
+    
     # qa_items = qa_items[0:120]  # 1
-    qa_items = qa_items[120:240]  # 2
-    # qa_items = qa_items[240:360]  # 1
+    # qa_items = qa_items[120:240]  # 2
+    qa_items = qa_items[240:360]  # 1
     # qa_items = qa_items[360:480]  # 2
 
     for idx, entry in enumerate(qa_items):
@@ -83,8 +83,8 @@ def run_vote_inference(qa_data_path, image_root_dir, frame_indices_dict_path, sa
         all_indices = frame_indices_list[idx]
         total = len(all_indices)
         # class 1
-        start = int(total * 0.55)
-        end = int(total * 0.8)
+        start = int(total * 0.5)
+        end = int(total * 0.7)
         # class 2
         # start = int(total * 0.75)
         # end = int(total * 0.95)
@@ -103,48 +103,6 @@ def run_vote_inference(qa_data_path, image_root_dir, frame_indices_dict_path, sa
     correct = 0
 
 
-    #         messages = [{"role": "user", "content": build_prompt(question, choices)}]
-    #         prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-
-    #         outputs = llm.generate({
-    #             "prompt": prompt,
-    #             "multi_modal_data": {"image": image}
-    #         }, sampling_params=sampling_params)
-
-    #         out_text = outputs[0].outputs[0].text.strip()
-    #         all_outputs.append(out_text)
-
-    #     # 投票
-    #     counter = Counter()
-    #     for output in all_outputs:
-    #         for choice in choices:
-    #             if choice.lower() in output.lower():
-    #                 counter[choice] += 1
-    #                 break
-    #     voted = counter.most_common(1)[0][0] if counter else "None"
-
-    #     result = {
-    #         "video_id": video_id,
-    #         "question": question,
-    #         "choices": choices,
-    #         "gt_answer": answer,
-    #         "pred_answer": voted,
-    #         "raw_outputs": all_outputs,
-    #         "vote_counter": dict(counter)
-    #     }
-    #     log.append(result)
-    #     if voted == answer:
-    #         correct += 1
-
-    #     print(f"[{idx+1}/{len(qa_items)}] ✅ Pred: {voted} | GT: {answer} | {'✔' if voted == answer else '✘'}")
-
-    # acc = correct / len(qa_items)
-    # print(f"\n✅ Overall Accuracy: {acc:.2%} ({correct}/{len(qa_items)})")
-
-    # os.makedirs(save_log_path, exist_ok=True)
-    # with open(os.path.join(save_log_path, "voting_results_log.json"), "w") as f:
-    #     json.dump(log, f, indent=2)
-
 # === CLI ===
 if __name__ == '__main__':
     # parser = argparse.ArgumentParser()
@@ -156,8 +114,7 @@ if __name__ == '__main__':
 
     # run_vote_inference(args.qa_data, args.image_dir, args.frames, args.save_log)
     QA = "/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/mixed_video_qa_randomized_4x_per_video.json"
-    img = "/home/cxx/HWs/AKS/Mixed Video Pipeline/Testing/outputs/Fighting/class_2/jpgs"
-    frames = "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Fighting/class_2/blip/optimized_frames/optimized_frames.json"
-    save_log = "XXXXX"
+    img = "/home/cxx/HWs/AKS/Mixed Video Pipeline/Testing/outputs/Shooting/class_1/jpgs"
+    frames = "/home/cxx/HWs/AKS/Mixed Video Pipeline/extracted_things/Shooting/class_1/blip/optimized_frames/optimized_frames.json"
+    save_log = "XXXX"
     run_vote_inference(QA, img, frames, save_log)
-    # extract_frame(video_path="/home/cxx/HWs/AKS/Mixed Video Pipeline/outputs/Fighting/class_1/Test_0_Mixed.mp4", frame_index=60, output_path="/home/cxx/HWs/AKS/Mixed Video Pipeline/Testing/outputs/Fighting/class_1/jpgs/Test_0_Mixed_60.jpg")

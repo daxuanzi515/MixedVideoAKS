@@ -221,7 +221,7 @@ Download three weights from [LINK](https://huggingface.co/openbmb/MiniCPM-V-2_6-
 
 #### Single Image Inference 
 ```bash
-./llama-minicpmv-cli -m /home/cxx/HWs/AKS/llama.cpp/Minicpmv2_6_gguf/ggml-model-Q4_K_M.gguf --mmproj /home/cxx/HWs/AKS/llama.cpp/Minicpmv2_6_gguf/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image /home/cxx/HWs/AKS/datasets/img/bto.jpg -p "这张图片中有什么？"
+./llama-minicpmv-cli -m /home/cxx/HWs/AKS/llama.cpp/Minicpmv2_6_gguf/ggml-model-Q4_K_M.gguf --mmproj /home/cxx/HWs/AKS/llama.cpp/Minicpmv2_6_gguf/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image /home/cxx/HWs/AKS/datasets/img/bto.jpg -p ""
 ```
 #### Video Inference 
 - Required RAM>=8GB

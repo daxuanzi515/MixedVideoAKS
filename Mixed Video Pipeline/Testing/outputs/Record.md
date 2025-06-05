@@ -5,7 +5,7 @@
 | Method            | Task Type         | General Correct Rate (%) | True Positive Rate (%) | False Positive Rate (%) | True Negative Rate (%) |
 |-------------------|-------------------|--------------------------|------------------------|-------------------------|------------------------|
 | **MixedVideoAKS** | Fighting_Class_1  | **94.25** (86.21)        | **43.68** (40.23)      | **50.57** (45.98)       | **6.90** (13.79)       |
-| **MixedVideoAKS** | Fighting_Class_2  | **93.33** (85.56)        | **27.78** (24.44)      | **65.56** (61.11)       | **6.67** (14.44)       |
+| **MixedVideoAKS** | Fighting_Class_2  | **93.33** (85.56)        | **27.78** (24.44)      | **65.56** (66.67)       | **6.67** (8.89)       |
 | **MixedVideoAKS** | Shooting_Class_1  | **97.78** (88.89)        | **46.67** (44.44)      | **51.11** (44.44)       | **2.22** (5.56)        |
 | **MixedVideoAKS** | Shooting_Class_2  | **97.75** (91.01)        | **49.44** (46.07)      | **48.31** (44.94)       | **2.25** (3.37)        |
 
@@ -86,12 +86,12 @@ For example, in `/home/cxx/HWs/AKS/Mixed Video Pipeline/Testing/Fighting_class_1
 - Fighting/class_2/jpgs, sampling from keyframes group 4 the 3rd one jpg, in total 90 items.
   - Fighting (Correct): 22
   - Shooting (Wrong): 8
-  - NONE (Correct): 55
-  - UNKNOWN (Wrong): 5
+  - NONE (Correct): 60
+  - UNKNOWN (Wrong): 0
   - **General Correct Rate**: $\frac{22 + 55}{90} \times 100\% \approx 85.56\%$
   - **True Positive Rate**: $\frac{22}{90} \times 100\% \approx 24.44\%$
-  - **False Positive Rate**: $\frac{55}{90} \times 100\% \approx 61.11\%$
-  - **True Negative Rate**: $\frac{5 + 8}{90} \times 100\% \approx 14.44\%$
+  - **False Positive Rate**: $\frac{60}{90} \times 100\% \approx 66.67\%$
+  - **True Negative Rate**: $\frac{8}{90} \times 100\% \approx 8.89\%$
 
 - Shooting/class_1/jpgs, sampling from keyframes group 4 the 3rd one jpg, in total 90 items.
   - Fighting (Wrong): 5

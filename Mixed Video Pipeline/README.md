@@ -56,3 +56,5 @@ procentage of components: B: M: B = 50%: 30%: 20% in total
 - Class 2: 75%
 procentage of components: B: M: B = 75%: 20%: 5% in total
 
+**Evaluation Example**
+![](img/example.png)
